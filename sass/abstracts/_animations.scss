@@ -1,0 +1,32 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// text start on the left and transparent when the page loads, then moves into regular position
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// skew to match the design of the .text-container class
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem) skewX(-12deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0) skewX(-12deg);
+  }
+}

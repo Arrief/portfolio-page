@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  // min-height to ensure footer sticks to bottom and background doesn't repeat
+  min-height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    rgba($col-main-light, 0.89) 0%,
+    rgba($col-main-dark, 0.84) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  color: $text-main;
+  // grid to ensure footer sticks to the bottom in all cases; body consists of header (auto), main (1fr) and footer (auto); needs min-height 100vh too, here added to "html, body"
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Inter", sans-serif;
+  font-size: $small-text;
+  line-height: 1.5;
+}
+
+main {
+  height: 100%;
+  margin: $margin-main;
+
+  & * {
+    animation: fade-in 2s ease-out;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+button {
+  color: $text-dark;
+  background-color: $text-special-light;
+  border: none;
+  border-radius: 10px;
+  font-style: inherit;
+  font-weight: bold;
+  padding: 0.7rem;
+  text-transform: uppercase;
+  width: 35%;
+
+  &:hover {
+    background-color: $text-special-dark;
+  }
+
+  &:active {
+    outline: 3px solid $text-dark;
+  }
+}

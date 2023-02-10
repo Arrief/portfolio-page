@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font general -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font navbar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FA icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Arne Rief - Web Developer</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index-en.html"><h1>Arne Rief</h1></a>
+          </li>
+          <li><a href="about-en.html">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Arrief" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li><a href="index.html">🇩🇪</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- WELCOME -->
+      <section class="welcome-section">
+        <h2 class="title">
+          Hello, I'm <span class="name">Arne</span>. <br />
+          <span class="subtitle">Welcome to my web page! 👋🏻</span>
+        </h2>
+        <p class="welcome-intro">
+          I am a
+          <span class="text-emphasis">full-stack web developer</span> with a
+          passion for learning, logic and combining both in order to create
+          meaningful and beautiful web applications. Currently I am focusing on
+          frontend development; my programming skills include
+          <span class="text-emphasis">JavaScript, React, HTML, CSS, Sass</span>
+          as well as <span class="text-emphasis">Node.js, Express.js</span> and
+          working with databases like
+          <span class="text-emphasis">MySQL</span> and
+          <span class="text-emphasis">MongoDB</span>.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects-section" id="projects">
+        <h2 class="title">Sample Projects</h2>
+        <div class="project-container">
+          <img
+            src="images/screenshot-note-book.png"
+            alt="A screenshot of a Note Book user's book collection page"
+            class="project-screenshot"
+          />
+          <div class="text-container">
+            <h3 class="subtitle">Note Book</h3>
+            <p>
+              <a
+                href="https://the-note-book.netlify.app/"
+                target="_blank"
+                class="text-link"
+                >Website</a
+              >&nbsp;|&nbsp;
+              <a
+                href="https://github.com/Arrief/note-book"
+                target="_blank"
+                class="text-link"
+                >GitHub Code</a
+              >
+            </p>
+            <p>
+              Note Book is a
+              <span class="text-emphasis">full-stack web application</span> for
+              book lovers. Sign up for a free account and build a
+              <span class="text-emphasis"> digital book collection</span>. Every
+              book in your collection comes with a "note book" for
+              <span class="text-emphasis">keeping track of your notes</span> on
+              the book and for storing remarkable quotations. Finding books,
+              notes and quotations is made easy thanks to a
+              <span class="text-emphasis">search function</span>. Additionally a
+              <span class="text-emphasis">filter</span> allows switching between
+              displaying notes or quotes only.
+            </p>
+            <p>
+              Created with: <br />
+              <span class="text-emphasis"
+                >React, JavaScript, Node.js, Express.js, MySQL, HTML & CSS</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="text-container">
+            <h3 class="subtitle">All In Trips</h3>
+            <p>
+              <a
+                href="https://all-in-trips.netlify.app/"
+                target="_blank"
+                class="text-link"
+                >Website</a
+              >&nbsp;|&nbsp;
+              <a
+                href="https://github.com/Arrief/All-In-Trips"
+                target="_blank"
+                class="text-link"
+                >GitHub Code</a
+              >
+            </p>
+            <p>
+              All In Trips is a
+              <span class="text-emphasis"
+                >frontend single page application</span
+              >
+              for planning your next vacation or business trip. Enter your
+              starting point, travel destination and the day of arrival and
+              departure <span class="text-emphasis">just once</span> to get an
+              overview of <span class="text-emphasis">the weather</span> at your
+              destination during your stay, the
+              <span class="text-emphasis">next flights</span> closest to your
+              current location and the
+              <span class="text-emphasis">cheapest hotels</span> available. With
+              data from <span class="text-emphasis">APIs</span>, provided by
+              reliable sources like
+              <span class="text-emphasis">Booking.com</span>.
+            </p>
+            <p>
+              Created with: <br />
+              <span class="text-emphasis"
+                >React, JavaScript, 5 APIs, HTML & CSS</span
+              >
+            </p>
+          </div>
+          <img
+            src="images/screenshot-all-in-trips.png"
+            alt="A screenshot of a All In Trips' landing page"
+            class="project-screenshot"
+          />
+        </div>
+
+        <div class="project-container">
+          <img
+            src="images/screenshot-auriga.png"
+            alt="A screenshot of a MiAuriga's landing page"
+            class="project-screenshot"
+          />
+          <div class="text-container">
+            <h3 class="subtitle">MiAuriga</h3>
+            <p class="note-auriga">
+              Website and repository are property of Auriga
+            </p>
+            <p>
+              As a <span class="text-emphasis">client project</span>, I worked
+              on the website MiAuriga. The
+              <span class="text-emphasis">Spanish company Auriga</span> is a
+              provider for all services related to cars. As part of a
+              <span class="text-emphasis">complete restructure</span> of both
+              the looks and functionality of the website, my tasks included
+              working on the
+              <span class="text-emphasis">re-design of the frontend</span> as
+              well as taking part in the planning and implementing of the
+              <span class="text-emphasis">newly created database</span> for
+              migrating the data of Auriga's customers.
+            </p>
+            <p>
+              Created with: <br />
+              <span class="text-emphasis"
+                >React, JavaScript, Node.js, MongoDB, MaterialUI/MUI, HTML &
+                CSS</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <h2 class="title">Contact me</h2>
+        <form
+          action="https://formspree.io/f/xrgvpkbn"
+          method="POST"
+          class="messenger-form"
+        >
+          <div>
+            <label for="name">First Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name..."
+              required
+            />
+          </div>
+          <div>
+            <label for="name">Last Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your last name..."
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address..."
+              required
+            />
+          </div>
+          <div>
+            <label for="subject">Subject:</label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject..."
+              required
+            />
+          </div>
+          <div class="text-area">
+            <label for="message">Message:</label>
+            <textarea
+              rows="20"
+              name="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </div>
+          <!-- disabling captcha for sending emails -->
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <address>
+        <dl>
+          <dt>LinkedIn:</dt>
+          <dd>
+            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+              ><i class="fa-brands fa-linkedin big-icon"></i
+            ></a>
+          </dd>
+          <dt>Github:</dt>
+          <dd>
+            <a href="https://github.com/Arrief" target="_blank"
+              ><i class="fa-brands fa-github big-icon"></i
+            ></a>
+          </dd>
+          <dt>Email:</dt>
+          <dd>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope big-icon"></i
+            ></a>
+          </dd>
+        </dl>
+      </address>
+      <p>&copy; 2023 Arne Rief</p>
+    </footer>
+  </body>
+</html>

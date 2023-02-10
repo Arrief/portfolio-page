@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.project-screenshot {
+  border-radius: $radius-text-container;
+  outline: 5px solid $text-special-dark;
+  outline-offset: 1.5rem;
+  object-fit: scale-down;
+  width: 40%;
+  transition: transform 0.6s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 100;
+  }
+}

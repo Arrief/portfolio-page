@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.project-container {
+  @include flex-sp-around-center;
+  gap: 2rem;
+}

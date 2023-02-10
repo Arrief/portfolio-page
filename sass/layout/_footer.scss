@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+footer {
+  background-color: $bg-text-container;
+  // delete positioning to make grid footer from body work
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  width: 100%;
+
+  & * {
+    margin: $margin-main;
+  }
+
+  dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+
+    & * {
+      color: inherit;
+      font-size: $medium-text;
+      margin: 0.5rem;
+      transition: transform 0.3s;
+    }
+
+    & dd i:hover {
+      @include main-link-hover;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .big-icon {
+    font-size: $big-text;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    top: 100;
+
+    & * {
+      margin: $margin-mobile;
+    }
+
+    dl {
+      flex-direction: column;
+      height: max-content;
+
+      & * {
+        font-size: $medium-text-mobile;
+        margin: 0.3rem;
+      }
+    }
+  }
+}

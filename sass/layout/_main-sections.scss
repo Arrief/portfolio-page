@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.about-section {
+  @include flex-sp-around-center;
+  @include narrow-container;
+}
+
+.welcome-section {
+  @include standard-grid;
+  gap: 8rem;
+  @include narrow-container;
+  width: 60%;
+
+  .welcome-intro {
+    border-radius: $radius-text-container;
+    outline: 3px solid $text-special-dark;
+    outline-offset: 1rem;
+  }
+}
+
+.projects-section {
+  @include wide-container;
+
+  // less margin between h2 and the 2nd child = first project-container
+  & > div:not(:nth-child(2)) {
+    margin-top: 10rem;
+  }
+}
+
+.contact-section {
+  @include wide-container;
+}

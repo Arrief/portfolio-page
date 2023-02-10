@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+@mixin main-link-hover {
+  color: $text-special-light;
+  transform: translateY(-0.3rem);
+}
+
+@mixin flex-sp-around-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin standard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin narrow-container {
+  margin: 3rem auto;
+}
+
+@mixin wide-container {
+  margin: 10rem auto;
+  width: 80%;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+}

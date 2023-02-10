@@ -1,0 +1,61 @@
+@use "../abstracts" as *;
+
+nav {
+  background-color: $bg-text-container;
+  font-family: "Archivo Black", sans-serif;
+  height: 10vh;
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    list-style-type: none;
+    padding: 0 3rem;
+    width: 100%;
+  }
+
+  // logo to the left side of navbar
+  li:first-child {
+    text-align: left;
+    margin-right: auto;
+  }
+
+  li a {
+    display: block;
+    color: inherit;
+    font-size: $medium-text;
+    padding: 0 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      @include main-link-hover;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 770px) {
+  nav {
+    ul {
+      gap: 1rem;
+      justify-content: center;
+      padding: 0;
+    }
+
+    li:first-child {
+      text-align: center;
+      margin-right: 1.5rem;
+    }
+
+    li a {
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+}

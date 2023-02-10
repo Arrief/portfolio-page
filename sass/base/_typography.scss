@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+.text-link {
+  color: $text-special-dark;
+
+  &:hover {
+    background-color: $text-special-dark;
+    border-radius: 2px;
+    color: $text-dark;
+    text-decoration: none;
+  }
+}
+
+.text-emphasis {
+  color: $text-special-light;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  color: $text-special-light;
+  font-size: $big-text;
+  width: fit-content;
+}
+
+.subtitle {
+  font-family: "Archivo Black", sans-serif;
+  color: $text-special-dark;
+  font-size: $medium-text;
+}
+
+.name {
+  font-size: calc(2 * $big-text);
+}
+
+.note-auriga {
+  color: $text-special-dark;
+  font-style: italic;
+}
