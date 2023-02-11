@@ -4,11 +4,10 @@ nav {
   background-color: $bg-text-container;
   font-family: "Archivo Black", sans-serif;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
 
   ul {
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
@@ -39,23 +38,24 @@ nav {
   }
 }
 
-// mobile
-@media screen and (max-width: 770px) {
+// tablet & mobile
+@media screen and (max-width: 980px) {
   nav {
+    height: fit-content;
+
     ul {
+      @include flex-column-center;
       gap: 1rem;
-      justify-content: center;
       padding: 0;
+    }
+
+    li a {
+      font-size: $big-text;
     }
 
     li:first-child {
       text-align: center;
       margin-right: 1.5rem;
-    }
-
-    li a {
-      font-size: 1rem;
-      padding: 0;
     }
   }
 }

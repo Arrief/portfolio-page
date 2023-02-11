@@ -18,3 +18,16 @@
   animation: moveInRight 2s ease-out;
   backface-visibility: hidden;
 }
+
+// mobile to smaller laptop screen sizes
+@media screen and (max-width: 1380px) {
+  .text-container {
+    transform: skewX(0);
+    width: auto;
+  }
+
+  .text-about {
+    animation: moveInRightMobile 2s ease-out;
+    margin-top: 5rem;
+  }
+}

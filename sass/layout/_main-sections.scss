@@ -30,3 +30,25 @@
 .contact-section {
   @include wide-container;
 }
+
+// mobile to smaller laptop screen sizes
+@media screen and (max-width: 1380px) {
+  .about-section {
+    @include flex-column-center;
+    @include mobile-container;
+  }
+
+  .welcome-section {
+    @include flex-column-center;
+    gap: 4rem;
+    @include mobile-container;
+  }
+
+  .projects-section {
+    @include mobile-container;
+  }
+
+  .contact-section {
+    @include mobile-container;
+  }
+}

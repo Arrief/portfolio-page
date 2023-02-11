@@ -11,6 +11,13 @@
   justify-content: space-around;
 }
 
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin standard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,4 +36,9 @@
   h2 {
     margin-bottom: 5rem;
   }
+}
+
+@mixin mobile-container {
+  margin: 8rem auto;
+  width: 80%;
 }

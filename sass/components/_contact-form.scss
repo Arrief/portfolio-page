@@ -38,3 +38,22 @@
     }
   }
 }
+
+// larger tablet to smaller laptop screen size
+@media screen and (max-width: 1380px) {
+  .messenger-form {
+    width: 100%;
+  }
+}
+
+// mobile to smaller tablet screen sizes
+@media screen and (max-width: 820px) {
+  .messenger-form {
+    @include flex-column-center;
+    width: 100%;
+
+    & div {
+      width: 100%;
+    }
+  }
+}

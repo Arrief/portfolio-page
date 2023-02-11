@@ -4,3 +4,16 @@
   @include flex-sp-around-center;
   gap: 2rem;
 }
+
+// mobile to smaller laptop screen sizes
+@media screen and (max-width: 1380px) {
+  .project-container {
+    @include flex-column-center;
+    gap: 5rem;
+  }
+
+  // for second project, otherwise screenshot below text-container
+  .reverse-order {
+    flex-direction: column-reverse;
+  }
+}
