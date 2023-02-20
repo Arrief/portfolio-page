@@ -6,6 +6,11 @@ nav {
   height: 10vh;
   width: 100vw;
 
+  // tablet & mobile
+  @include responsive(tablet) {
+    height: fit-content;
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -14,12 +19,25 @@ nav {
     list-style-type: none;
     padding: 0 3rem;
     width: 100%;
+
+    // tablet & mobile
+    @include responsive(tablet) {
+      @include flex-column-center;
+      gap: 1rem;
+      padding: 0;
+    }
   }
 
   // logo to the left side of navbar
   li:first-child {
     text-align: left;
     margin-right: auto;
+
+    // tablet & mobile
+    @include responsive(tablet) {
+      text-align: center;
+      margin-right: 1.5rem;
+    }
   }
 
   li a {
@@ -35,27 +53,10 @@ nav {
     &:hover {
       @include main-link-hover;
     }
-  }
-}
 
-// tablet & mobile
-@media screen and (max-width: 980px) {
-  nav {
-    height: fit-content;
-
-    ul {
-      @include flex-column-center;
-      gap: 1rem;
-      padding: 0;
-    }
-
-    li a {
+    // tablet & mobile
+    @include responsive(tablet) {
       font-size: $big-text;
-    }
-
-    li:first-child {
-      text-align: center;
-      margin-right: 1.5rem;
     }
   }
 }

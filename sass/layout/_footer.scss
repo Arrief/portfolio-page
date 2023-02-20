@@ -2,14 +2,15 @@
 
 footer {
   background-color: $bg-text-container;
-  // delete positioning to make grid footer from body work
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
   width: 100vw;
 
   & * {
     margin: $margin-main;
+
+    // mobile
+    @include responsive(phone) {
+      margin: $margin-mobile;
+    }
   }
 
   dl {
@@ -18,11 +19,23 @@ footer {
     align-items: center;
     height: 2rem;
 
+    // mobile
+    @include responsive(phone) {
+      flex-direction: column;
+      height: max-content;
+    }
+
     & * {
       color: inherit;
       font-size: $medium-text;
       margin: 0.5rem;
       transition: transform 0.3s;
+
+      // mobile
+      @include responsive(phone) {
+        font-size: $medium-text-mobile;
+        margin: 0.3rem;
+      }
     }
 
     & dd i:hover {
@@ -36,24 +49,5 @@ footer {
 
   .big-icon {
     font-size: $big-text;
-  }
-}
-
-// mobile
-@media screen and (max-width: 520px) {
-  footer {
-    & * {
-      margin: $margin-mobile;
-    }
-
-    dl {
-      flex-direction: column;
-      height: max-content;
-
-      & * {
-        font-size: $medium-text-mobile;
-        margin: 0.3rem;
-      }
-    }
   }
 }

@@ -5,6 +5,11 @@
   gap: 2rem;
   width: 50%;
 
+  // larger tablet to smaller laptop screen size
+  @include responsive(laptop) {
+    width: 100%;
+  }
+
   // container for each label & input
   div {
     display: flex;
@@ -36,13 +41,6 @@
       background-color: $bg-text-container;
       outline: 3px solid $text-special-dark;
     }
-  }
-}
-
-// larger tablet to smaller laptop screen size
-@media screen and (max-width: 1380px) {
-  .messenger-form {
-    width: 100%;
   }
 }
 

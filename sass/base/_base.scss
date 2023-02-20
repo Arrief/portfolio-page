@@ -41,3 +41,8 @@ main {
     animation: fade-in 2s ease-out;
   }
 }
+
+::selection {
+  background-color: $text-main;
+  color: $text-dark;
+}

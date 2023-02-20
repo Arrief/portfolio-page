@@ -8,6 +8,12 @@
   transform: skewX(-12deg);
   width: 50%;
 
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
+    transform: skewX(0);
+    width: auto;
+  }
+
   // margin between paragraphs but not below the last paragraph
   & p:not(:last-child) {
     margin-bottom: 1.5rem;
@@ -17,16 +23,9 @@
 .text-about {
   animation: moveInRight 2s ease-out;
   backface-visibility: hidden;
-}
 
-// mobile to smaller laptop screen sizes
-@media screen and (max-width: 1380px) {
-  .text-container {
-    transform: skewX(0);
-    width: auto;
-  }
-
-  .text-about {
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
     animation: moveInRightMobile 2s ease-out;
     margin-top: 5rem;
   }

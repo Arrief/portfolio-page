@@ -3,6 +3,12 @@
 .about-section {
   @include flex-sp-around-center;
   @include narrow-container;
+
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
+    @include flex-column-center;
+    @include mobile-container;
+  }
 }
 
 .welcome-section {
@@ -10,6 +16,13 @@
   gap: 8rem;
   @include narrow-container;
   width: 60%;
+
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
+    @include flex-column-center;
+    gap: 4rem;
+    @include mobile-container;
+  }
 
   .welcome-intro {
     border-radius: $radius-text-container;
@@ -21,6 +34,11 @@
 .projects-section {
   @include wide-container;
 
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
+    @include mobile-container;
+  }
+
   // less margin between h2 and the 2nd child = first project-container
   & > div:not(:nth-child(2)) {
     margin-top: 10rem;
@@ -29,26 +47,9 @@
 
 .contact-section {
   @include wide-container;
-}
 
-// mobile to smaller laptop screen sizes
-@media screen and (max-width: 1380px) {
-  .about-section {
-    @include flex-column-center;
-    @include mobile-container;
-  }
-
-  .welcome-section {
-    @include flex-column-center;
-    gap: 4rem;
-    @include mobile-container;
-  }
-
-  .projects-section {
-    @include mobile-container;
-  }
-
-  .contact-section {
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
     @include mobile-container;
   }
 }

@@ -6,7 +6,7 @@
 }
 
 // mobile to smaller laptop screen sizes
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1400px) {
   .project-container {
     @include flex-column-center;
     gap: 5rem;
