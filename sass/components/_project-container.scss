@@ -3,17 +3,18 @@
 .project-container {
   @include flex-sp-around-center;
   gap: 2rem;
-}
 
-// mobile to smaller laptop screen sizes
-@media screen and (max-width: 1400px) {
-  .project-container {
+  // mobile to smaller laptop screen sizes
+  @include responsive(laptop) {
     @include flex-column-center;
     gap: 5rem;
-  }
 
-  // for second project, otherwise screenshot below text-container
-  .reverse-order {
-    flex-direction: column-reverse;
+    /* 
+    important for second project, otherwise screenshot below text-container;
+    could be done with separate class for 2nd project and flex-dir: col-reverse for media query too
+    */
+    & > img {
+      order: -1;
+    }
   }
 }

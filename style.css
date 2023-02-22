@@ -52,7 +52,11 @@ body {
 }
 
 body {
-  background: linear-gradient(45deg, rgba(2, 48, 89, 0.89) 0%, rgba(9, 61, 94, 0.84) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 48, 89, 0.89) 0%,
+    rgba(9, 61, 94, 0.84) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -343,7 +347,6 @@ footer .big-icon {
   justify-content: space-around;
   gap: 2rem;
 }
-
 @media screen and (max-width: 1400px) {
   .project-container {
     display: flex;
@@ -351,11 +354,16 @@ footer .big-icon {
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    /* 
+    important for second project, otherwise screenshot below text-container;
+    could be done with separate class for 2nd project and flex-dir: col-reverse for media query too
+    */
   }
-  .reverse-order {
-    flex-direction: column-reverse;
+  .project-container > img {
+    order: -1;
   }
 }
+
 .project-screenshot {
   border-radius: 10px;
   outline: 5px solid #e79759;
