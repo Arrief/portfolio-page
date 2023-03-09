@@ -25,10 +25,6 @@
   justify-content: center;
 }
 
-@mixin narrow-container {
-  margin: 3rem auto;
-}
-
 @mixin wide-container {
   margin: 10rem auto;
   width: 80%;
@@ -38,9 +34,13 @@
   }
 }
 
-@mixin mobile-container {
+@mixin medium-container {
   margin: 8rem auto;
   width: 80%;
+}
+
+@mixin mobile-container {
+  margin: 3rem auto;
 }
 
 // media queries

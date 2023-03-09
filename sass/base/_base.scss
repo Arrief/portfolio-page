@@ -40,6 +40,10 @@ main {
   & * {
     animation: fade-in 2s ease-out;
   }
+
+  @include responsive(phone) {
+    margin: 2rem 0.5rem;
+  }
 }
 
 ::selection {
