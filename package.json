@@ -1,0 +1,24 @@
+{
+  "name": "arne-rief-portfolio-page",
+  "version": "1.0.0",
+  "description": "This is my portfolio website, built with HTML and Sass.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx sass sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arrief/portfolio-page.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "sass"
+  ],
+  "author": "Arne Rief",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arrief/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/Arrief/portfolio-page#readme"
+}

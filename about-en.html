@@ -32,35 +32,49 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li>
-            <a href="index-en.html"><h1>Arne Rief</h1></a>
+            <a href="index-en.html" aria-label="Back to main page"
+              ><h1>Arne Rief</h1></a
+            >
           </li>
-          <li><a href="about-en.html">About me</a></li>
-          <li><a href="index-en.html#projects">Projects</a></li>
-          <li><a href="index-en.html#contact">Contact</a></li>
+          <li><a href="about-en.html" aria-label="About page">About me</a></li>
           <li>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a href="index-en.html#projects" aria-label="Projects">Projects</a>
+          </li>
+          <li>
+            <a href="index-en.html#contact" aria-label="Contact me">Contact</a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="My LinkedIn Profile"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="My Github Account"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
-          <li><a href="about.html">🇩🇪</a></li>
+          <li>
+            <a href="about.html" aria-label="Switch to German language">🇩🇪</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="about-section">
-        <div class="portrait-container">
+        <figure class="portrait-container">
           <img src="images/portrait.JPG" alt="Arne Rief" />
-        </div>
-        <div class="text-container text-about">
+        </figure>
+        <article class="text-container text-about">
           <p>
             Hi, my name is <span class="text-emphasis">Arne Rief</span>.
             Originally I studied history with the goal of an academic career in
@@ -85,7 +99,7 @@
             <span class="text-emphasis">new challenges</span> and I look forward
             to hearing from you!
           </p>
-        </div>
+        </article>
       </section>
     </main>
 
@@ -95,19 +109,25 @@
         <dl>
           <dt>LinkedIn:</dt>
           <dd>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="My LinkedIn Profile"
               ><i class="fa-brands fa-linkedin big-icon"></i
             ></a>
           </dd>
           <dt>Github:</dt>
           <dd>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="My Github Account"
               ><i class="fa-brands fa-github big-icon"></i
             ></a>
           </dd>
           <dt>Email:</dt>
           <dd>
-            <a href="#contact">
+            <a href="#contact" aria-label="To the contact form">
               <i class="fa-solid fa-envelope big-icon"></i
             ></a>
           </dd>

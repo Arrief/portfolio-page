@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,35 +32,51 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li>
-            <a href="index.html"><h1>Arne Rief</h1></a>
+            <a href="index.html" aria-label="Zurück zur Hauptseite"
+              ><h1>Arne Rief</h1></a
+            >
           </li>
-          <li><a href="about.html">Über mich</a></li>
-          <li><a href="index.html#projects">Projekte</a></li>
-          <li><a href="index.html#contact">Kontakt</a></li>
           <li>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a href="about.html" aria-label="Über mich Infoseite">Über mich</a>
+          </li>
+          <li>
+            <a href="index.html#projects" aria-label="Projekte">Projekte</a>
+          </li>
+          <li><a href="index.html#contact" aria-label="Kontakt">Kontakt</a></li>
+          <li>
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="Mein LinkedIn Profil"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="Mein Github Account"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
-          <li><a href="about-en.html">🇬🇧</a></li>
+          <li>
+            <a href="about-en.html" aria-label="Switch to English language"
+              >🇬🇧</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="about-section">
-        <div class="portrait-container">
+        <figure class="portrait-container">
           <img src="images/portrait.JPG" alt="Arne Rief" />
-        </div>
-        <div class="text-container text-about">
+        </figure>
+        <article class="text-container text-about">
           <p>
             Hallo, mein Name ist <span class="text-emphasis">Arne Rief</span>.
             Ursprünglich hatte ich eine akademische Karriere als
@@ -87,7 +103,7 @@
             ich immer offen und bereit. Ich freue mich darauf, von Ihnen zu
             hören!
           </p>
-        </div>
+        </article>
       </section>
     </main>
 
@@ -97,19 +113,25 @@
         <dl>
           <dt>LinkedIn:</dt>
           <dd>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="Mein LinkedIn Profil"
               ><i class="fa-brands fa-linkedin big-icon"></i
             ></a>
           </dd>
           <dt>Github:</dt>
           <dd>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="Mein Github Account"
               ><i class="fa-brands fa-github big-icon"></i
             ></a>
           </dd>
           <dt>Email:</dt>
           <dd>
-            <a href="#contact">
+            <a href="#contact" aria-label="Zur Kontaktform">
               <i class="fa-solid fa-envelope big-icon"></i
             ></a>
           </dd>

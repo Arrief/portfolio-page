@@ -1,7 +1,9 @@
 @use "../abstracts/" as *;
 
 .project-container {
-  @include flex-sp-around-center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 
   // mobile to smaller laptop screen sizes

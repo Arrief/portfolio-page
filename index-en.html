@@ -32,25 +32,39 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li>
-            <a href="index-en.html"><h1>Arne Rief</h1></a>
+            <a href="index-en.html" aria-label="Back to main page"
+              ><h1>Arne Rief</h1></a
+            >
           </li>
-          <li><a href="about-en.html">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="about-en.html" aria-label="About page">About me</a></li>
           <li>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a href="index-en.html#projects" aria-label="Projects">Projects</a>
+          </li>
+          <li>
+            <a href="index-en.html#contact" aria-label="Contact me">Contact</a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="My LinkedIn Profile"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="My Github Account"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
-          <li><a href="index.html">🇩🇪</a></li>
+          <li>
+            <a href="index.html" aria-label="Switch to German language">🇩🇪</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -62,18 +76,25 @@
           Hello, I'm <span class="name">Arne</span>. <br />
           <span class="subtitle">Welcome to my web page! 👋🏻</span>
         </h2>
-        <p class="welcome-intro">
-          I am a
-          <span class="text-emphasis">full-stack web developer</span> with a
-          passion for learning, logic and combining both in order to create
-          meaningful and beautiful web applications. Currently I am focusing on
-          frontend development; my programming skills include
-          <span class="text-emphasis">JavaScript, React, HTML, CSS, Sass</span>
-          as well as <span class="text-emphasis">Node.js, Express.js</span> and
-          working with databases like
-          <span class="text-emphasis">MySQL</span> and
-          <span class="text-emphasis">MongoDB</span>.
-        </p>
+        <article class="welcome-intro">
+          <p>
+            I am a
+            <span class="text-emphasis">full-stack web developer</span> with a
+            passion for learning, logic and combining both in order to create
+            meaningful and beautiful web applications.
+          </p>
+          <p>
+            Currently I am focusing on frontend development; my programming
+            skills include
+            <span class="text-emphasis"
+              >JavaScript, React, HTML, CSS, Sass</span
+            >
+            as well as
+            <span class="text-emphasis">Node.js, Express.js</span> and working
+            with databases like <span class="text-emphasis">MySQL</span> and
+            <span class="text-emphasis">MongoDB</span>.
+          </p>
+        </article>
       </section>
 
       <!-- PROJECTS -->
@@ -85,19 +106,21 @@
             alt="A screenshot of a Note Book user's book collection page"
             class="project-screenshot"
           />
-          <div class="text-container">
+          <article class="text-container">
             <h3 class="subtitle">Note Book</h3>
             <p>
               <a
                 href="https://the-note-book.netlify.app/"
                 target="_blank"
                 class="text-link"
+                aria-label="Live demo of Note Book at Netlify"
                 >Website</a
               >&nbsp;|&nbsp;
               <a
                 href="https://github.com/Arrief/note-book"
                 target="_blank"
                 class="text-link"
+                aria-label="The Github repository for Note Book"
                 >GitHub Code</a
               >
             </p>
@@ -120,24 +143,26 @@
                 >React, JavaScript, Node.js, Express.js, MySQL, HTML & CSS</span
               >
             </p>
-          </div>
+          </article>
         </div>
 
         <!-- reverse order class for smaller screen sizes -->
         <div class="project-container">
-          <div class="text-container">
+          <article class="text-container">
             <h3 class="subtitle">All In Trips</h3>
             <p>
               <a
                 href="https://all-in-trips.netlify.app/"
                 target="_blank"
                 class="text-link"
+                aria-label="Live demo of All In Trips at Netlify"
                 >Website</a
               >&nbsp;|&nbsp;
               <a
                 href="https://github.com/Arrief/All-In-Trips"
                 target="_blank"
                 class="text-link"
+                aria-label="The Github repository for All In Trips"
                 >GitHub Code</a
               >
             </p>
@@ -164,7 +189,7 @@
                 >React, JavaScript, 5 APIs, HTML & CSS</span
               >
             </p>
-          </div>
+          </article>
           <img
             src="images/screenshot-all-in-trips.png"
             alt="A screenshot of a All In Trips' landing page"
@@ -178,7 +203,7 @@
             alt="A screenshot of a MiAuriga's landing page"
             class="project-screenshot"
           />
-          <div class="text-container">
+          <article class="text-container">
             <h3 class="subtitle">MiAuriga</h3>
             <p class="note-auriga">
               Website and repository are property of Auriga
@@ -203,7 +228,7 @@
                 CSS</span
               >
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -216,19 +241,21 @@
           class="messenger-form"
         >
           <div>
-            <label for="name">First Name:</label>
+            <label for="first-name">First Name:</label>
             <input
               type="text"
-              name="name"
+              id="first-name"
+              name="first-name"
               placeholder="Your name..."
               required
             />
           </div>
           <div>
-            <label for="name">Last Name:</label>
+            <label for="last-name">Last Name:</label>
             <input
               type="text"
-              name="name"
+              id="last-name"
+              name="last-name"
               placeholder="Your last name..."
               required
             />
@@ -237,6 +264,7 @@
             <label for="email">Email:</label>
             <input
               type="email"
+              id="email"
               name="email"
               placeholder="Your email address..."
               required
@@ -246,6 +274,7 @@
             <label for="subject">Subject:</label>
             <input
               type="text"
+              id="subject"
               name="subject"
               placeholder="Subject..."
               required
@@ -255,6 +284,7 @@
             <label for="message">Message:</label>
             <textarea
               rows="20"
+              id="message"
               name="message"
               placeholder="Your message..."
               required
@@ -273,19 +303,25 @@
         <dl>
           <dt>LinkedIn:</dt>
           <dd>
-            <a href="https://linkedin.com/in/arne-rief" target="_blank"
+            <a
+              href="https://linkedin.com/in/arne-rief"
+              target="_blank"
+              aria-label="My LinkedIn Profile"
               ><i class="fa-brands fa-linkedin big-icon"></i
             ></a>
           </dd>
           <dt>Github:</dt>
           <dd>
-            <a href="https://github.com/Arrief" target="_blank"
+            <a
+              href="https://github.com/Arrief"
+              target="_blank"
+              aria-label="My Github Account"
               ><i class="fa-brands fa-github big-icon"></i
             ></a>
           </dd>
           <dt>Email:</dt>
           <dd>
-            <a href="#contact">
+            <a href="#contact" aria-label="To the contact form">
               <i class="fa-solid fa-envelope big-icon"></i
             ></a>
           </dd>

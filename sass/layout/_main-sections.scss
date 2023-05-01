@@ -36,6 +36,11 @@
     border-radius: $radius-text-container;
     outline: 3px solid $text-special-dark;
     outline-offset: 1rem;
+
+    // spacing between paragraphs but not below the last paragraph
+    p:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 }
 

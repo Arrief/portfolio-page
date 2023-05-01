@@ -2,6 +2,7 @@
 
 .text-link {
   color: $text-special-dark;
+  transition: all 0.2s;
 
   &:hover {
     background-color: $text-special-dark;

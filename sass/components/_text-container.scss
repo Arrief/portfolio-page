@@ -18,7 +18,7 @@
     padding: 1rem;
   }
 
-  // margin between paragraphs but not below the last paragraph
+  // spacing between paragraphs but not below the last paragraph
   & p:not(:last-child) {
     margin-bottom: 1.5rem;
   }
